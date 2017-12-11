@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: gray;
+    /*align-self: center;*/
+}
