@@ -1,0 +1,79 @@
+!<html>
+  <head>
+    <style>
+      * {
+        margin: 10px;
+        padding: 5px;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+  <form>
+    <label >Vorname<input type="text" id="vorname"></label>
+    <label>Name<input type="text" id="name"></label><br>
+    <label>Telefonnummer<input type="text" id="telefon"></label>
+    <button id="add">uebernehmen</button>
+  </form>
+
+  <h1>Telefonbuch 8000</h1>
+
+  <ul id="liste">
+    <li>Homer Simpson <strong>071 123 45 67</strong></li>
+    <li>Lisa Simpson  <strong>071 123 45 68</strong></li>
+    <li>Marge Simpson <strong>071 123 45 69</strong></li>
+    <li>Maggie Simpson <strong>071 123 45 70</strong></li>
+    <li>Hugo Simpson <strong>071 123 45 71</strong></li>
+  </ul>
+
+
+    <script>
+      /* Aufgabe:
+       * Bau ein Telefonbuch.
+         Oben hast du eine Liste von Namen, Vornamen und Telefonnummern, die ein Telefonbuch darstellt.
+
+         Bau ein Formular mit 3 Eingabfeldern (Vorname, Name, Telefonnummer)
+         Wenn auf einem der Felder Enter gedrückt wird, soll eine neue Zeile ins Telefonbuch eingefügt werden.
+      */
+
+      let vorname = document.getElementById('vorname');
+      let name = document.getElementById('name');
+      let telefon = document.getElementById('telefon');
+      let neuerEintrag = document.getElementById('add');
+
+      let liste = document.getElementById('liste');
+
+      neuerEintrag.addEventListener('click', function (e) {
+        console.log('hello')
+              /*
+              let li = document.createElement('li')
+              li.innerHTML = vorname.value + " " + name.value + " " + "<strong>" + telefon.value + "</strong>";
+              liste.appendChild(li);
+              */
+      })
+
+
+
+      /*
+
+        neuerEintrag.addEventListener('click', function (e) {
+
+       let form = document.querySelector('#add').forEach(neu => {
+          neu.addEventListener('keypress' || 'click', neuerEintrag)
+      })
+
+
+      let form = document.querySelector('#add').addEventListener('click' || 'keypress', e => {
+          if (e.keyCode === 13) {
+              let li = document.createElement('li')
+              li.innerHTML = vorname.value + " " + name.value + " " + "<strong>" + telefon.value + "</strong>";
+              document.getElementById("list").push(li);
+          }
+      })
+      */
+    </script>
+  </body>
+</html>
+
+
